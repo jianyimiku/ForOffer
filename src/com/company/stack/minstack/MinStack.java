@@ -1,4 +1,4 @@
-package com.company.minstack;
+package com.company.stack.minstack;
 
 import java.util.Stack;
 

@@ -1,6 +1,4 @@
-package com.company.findRepeatNumber;
-
-import java.util.HashMap;
+package com.company.array.findRepeatNumber;
 
 /**
  * @author ：sjq

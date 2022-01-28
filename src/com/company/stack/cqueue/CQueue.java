@@ -1,4 +1,4 @@
-package com.company.cqueue;
+package com.company.stack.cqueue;
 
 import java.util.Stack;
 
