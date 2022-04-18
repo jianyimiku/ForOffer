@@ -8,13 +8,14 @@ import java.util.Arrays;
  * @author ：sjq
  * @date ：Created in 2022/1/22 2:04 下午
  * @description：快速排序
+ * [4,7,2,3,1,5,6]
  * @modified By：
  * @version: $
  */
 public class QuickSort extends BaseModel {
 
     public static void main(String[] args) {
-        generateNum();
+        generateFixNum();
         quickSort(nums, 0, nums.length - 1);
         System.out.println(Arrays.toString(nums));
     }
@@ -31,11 +32,12 @@ public class QuickSort extends BaseModel {
 
 
     private static int partition(int[] nums, int left, int right) {
+        // [4,7,2,3,1,5,6]
         int temp = nums[left];
         int j = left;
 
         for (int i = left + 1; i <= right; i++) {
-            if (nums[i] < temp) {
+            if (nums[i] <= temp) {
                 swap(nums, i, j + 1);
                 j++;
             }

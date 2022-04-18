@@ -25,6 +25,10 @@ public class BaseModel {
         }
     }
 
+    public static void generateFixNum() {
+        nums = new int[]{4, 4, 7,7, 2, 3, 1,0, 5, 6};
+    }
+
 
     public static void main(String[] args) {
         generateNum();
@@ -34,7 +38,7 @@ public class BaseModel {
             // 最小值的索引
             int minIndex = i;
             for (int j = i + 1; j < nums.length; j++) {
-                if (nums[minIndex] > nums[j]){
+                if (nums[minIndex] > nums[j]) {
                     minIndex = j;
                 }
             }
